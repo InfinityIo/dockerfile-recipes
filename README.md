@@ -6,10 +6,8 @@ Contained are a collection of Dockerfiles that we use internally but for whateve
 What's Inside
 -------------
 
-All images are based on Ubuntu 14.04.
-
 ### GitLab CI Runner
-These recipes are based on the Dockerfile provided by GitLab for setting up a CI runner on Ubuntu. They are each tailored towards providing base functionality you could add to, or to cover a specific solution.
+These recipes are based on the Dockerfile provided by GitLab for setting up a CI runner on Ubuntu 14.04. They are each tailored towards providing base functionality you could add to, or to cover a specific solution.
 
 **Note**: these setups assume that you have an `id_rsa` private key file in the root context that will be copied in as the private key for the runner. This is so you can use just one deploy key among many runners. If this is not the case then you'll need to remove the `COPY id_rsa /root/.ssh/` line.
 
