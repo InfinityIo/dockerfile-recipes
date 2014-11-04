@@ -11,7 +11,7 @@ All images are based on Ubuntu 14.04.
 ### GitLab CI Runner
 These recipes are based on the Dockerfile provided by GitLab for setting up a CI runner on Ubuntu. They are each tailored towards providing base functionality you could add to, or to cover a specific solution.
 
-**Note**: these setups assume that you have an `id_rsa` private key file in the root context that will be copied in as the private key for the runner. This is so you can use just one deploy key among many runners. If this is not the case then you'll need to remove the `COPY id_rsa /root/.ssh` line.
+**Note**: these setups assume that you have an `id_rsa` private key file in the root context that will be copied in as the private key for the runner. This is so you can use just one deploy key among many runners. If this is not the case then you'll need to remove the `COPY id_rsa /root/.ssh/` line.
 
 * **NodeJS**: Ubuntu packages `npm`, `nodejs` and `nodejs-legacy` and their requirements are installed.
 * **Grunt/Gulp Themes**: Based on the `NodeJS` dockerfile, this package adds the `grunt`, `grunt-cli` and `gulp` packages via NPM, as well as installing `compass` and `sass` gems, so you can run tests that include building stylesheets.
