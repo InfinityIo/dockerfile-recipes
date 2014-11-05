@@ -1,4 +1,4 @@
-# infinity/gitlab-ci-runner-grunt-gulp-themes
+# infinity/gitlab-ci-runner-grunt-gulp-sass-themes
 
 FROM ubuntu:14.04
 MAINTAINER Nik Rolls "nik@infinity.io"
