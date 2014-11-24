@@ -59,6 +59,7 @@ RUN gem install compass && gem install sass && gem install oily_png
 RUN mkdir -p /root/.ssh
 RUN touch /root/.ssh/known_hosts
 COPY id_rsa /root/.ssh/
+RUN chmod 600 /root/.ssh/id_rsa
 
 # Restore interactive console configurations
 ENV DEBIAN_FRONTEND interactive

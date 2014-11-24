@@ -69,6 +69,7 @@ COPY _ss_environment.php /gitlab-ci-runner.git/tmp/builds/
 RUN mkdir -p /root/.ssh
 RUN touch /root/.ssh/known_hosts
 COPY id_rsa /root/.ssh/
+RUN chmod 600 /root/.ssh/id_rsa
 
 # Restore interactive console configurations
 ENV DEBIAN_FRONTEND interactive

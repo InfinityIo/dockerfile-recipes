@@ -57,6 +57,7 @@ RUN apt-get install -y npm nodejs-legacy
 RUN mkdir -p /root/.ssh
 RUN touch /root/.ssh/known_hosts
 COPY id_rsa /root/.ssh/
+RUN chmod 600 /root/.ssh/id_rsa
 
 # Restore interactive console configurations
 ENV DEBIAN_FRONTEND interactive
